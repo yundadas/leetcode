@@ -1,6 +1,6 @@
 class Solution:
     def balancedStringSplit(self, s: str) -> int:
-        l=0, r=0
+        l, r=0, 0
         bal=0
         for a in s:
             if a =='R':
