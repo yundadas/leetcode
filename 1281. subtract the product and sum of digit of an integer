@@ -1,0 +1,10 @@
+class Solution:
+    def subtractProductAndSum(self, n: int) -> int:
+        sumsum, mal, i=0,0,0
+        while n:
+            sumsum+=(n%10)
+            if i ==0: mal = n%10
+            else: mal=mal*+(n%10)
+            i+=1
+            n=n//10
+        return mal-sumsum
