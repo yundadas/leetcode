@@ -1,0 +1,9 @@
+class Solution:
+    def pivotInteger(self, n: int) -> int:
+        maxsum=n*(n+1)/2
+        for i in range(1,n+1):
+            currentsum=i*(i+1)/2
+            remainsum=maxsum-currentsum+i
+            if remainsum==currentsum:
+                return i
+        return -1
