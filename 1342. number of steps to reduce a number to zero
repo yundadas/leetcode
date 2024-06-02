@@ -1,0 +1,10 @@
+class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        def zero(num,n):
+            if num==0:
+                return n
+            if num%2==0:
+                return zero(num//2,n+1)
+            else:
+                return zero(num-1,n+1)
+        return zero(num,0)
