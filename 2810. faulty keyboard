@@ -1,0 +1,9 @@
+class Solution:
+    def finalString(self, s: str) -> str:
+        stack = []
+        for i in s:
+            if i != 'i':
+                stack.append(i)
+            else:
+                stack = stack[::-1]
+        return ''.join(stack)  
