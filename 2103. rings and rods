@@ -1,0 +1,23 @@
+class Solution:
+    def countPoints(self, rings: str) -> int:
+        count=0
+        arr=[]
+        for i in range(0,len(rings),2):
+            arr.append(rings[i:i+2])
+        print(arr)
+
+        dicc={}
+
+        for j in range(len(arr)):
+            if int(arr[j][1]) in dicc:
+                dicc[int(arr[j][1])]+=arr[j][0]
+            else:
+                dicc[int(arr[j][1])]=arr[j][0]
+        print(dicc)
+        for k,v in dicc.items():
+            sss=set(list(v))
+            print(sss)
+            if len(sss)==3:
+                count+=1
+            
+        return count
