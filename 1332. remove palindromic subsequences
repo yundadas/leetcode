@@ -1,0 +1,11 @@
+class Solution:
+    def removePalindromeSub(self, s: str) -> int:
+        if s=='':
+            return 0
+        l,u=0,len(s)-1
+        while l<u:
+            if s[l]!=s[u]:
+                return 2
+            l+=1
+            u-=1
+        return 1
