@@ -1,3 +1,5 @@
+<img width="202" alt="image" src="https://github.com/yundadas/leetcode/assets/164009832/582c9bd2-5ad8-4101-9856-300a790f265e">
+
 <img width="196" alt="image" src="https://github.com/yundadas/leetcode/assets/164009832/86bf411d-fb97-43b9-9539-ae7139325279">
 
 <img width="203" alt="image" src="https://github.com/yundadas/leetcode/assets/164009832/35046c2f-3187-4d25-a4e3-901822faff68">
