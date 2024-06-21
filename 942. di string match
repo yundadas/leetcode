@@ -1,0 +1,16 @@
+class Solution:
+    def diStringMatch(self, s: str) -> List[int]:
+        result = [] * (len(s) + 1)
+        smallest, biggest = 0, len(s)
+        for i in range(len(s)):
+            if s[i] == 'I':
+                result.append(smallest)
+                smallest += 1
+                if i == (len(s) - 1):
+                    result.append(smallest)
+            if s[i] == 'D':
+                result.append(biggest)
+                biggest -= 1
+                if i == (len(s) - 1):
+                    result.append(biggest)
+        return result
