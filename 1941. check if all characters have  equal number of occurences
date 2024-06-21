@@ -1,0 +1,10 @@
+class Solution:
+    def areOccurrencesEqual(self, s: str) -> bool:
+        lst=[]
+        for i in s:
+            c=s.count(i)
+            lst.append(c)
+        if min(lst)==max(lst):
+            return True
+        else:
+            return False
