@@ -1,0 +1,14 @@
+class Solution:
+    def generateTheString(self, n: int) -> str:
+        res = ['s']
+        if len(res) == n:
+            return res
+            
+        while len(res) + 1 < n:
+            res.append('s')
+            res.append('s')
+            if len(res) == n:
+                return res        
+        
+        res.append('a')
+        return res
